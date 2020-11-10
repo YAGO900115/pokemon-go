@@ -4,22 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- jquery mobile -->
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="themes/Pokemon_Go.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> 
+    <link rel="stylesheet" href="style.css" />
 
     <title>Pokemon Go</title>
+    <style></style>
 </head>
 <body>
     
     <!-- 首頁 -->
-    <div data-role="page" id="page00">
+    <div data-role="page" id="page00" class="bg_color">
         <div data-role="header">
             <h1>Pokemon GO</h1>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content" class="bg_color">
             <h1>歡迎蒞臨Pokemon Go</h1>
             <img src="https://img.4gamers.com.tw/ckfinder/files/Elvis/News/20200123-Pokemon/feb2020-events.jpg" title="pokemon go main picture" width="100%" alt="">
             <ul data-role="listview" data-inset="true">
@@ -31,7 +59,7 @@
                 </a></li>
 
                 <li><a href="#page02">
-                    <img src="https://p2.bahamut.com.tw/B/2KU/69/0e254b5da88128965980495a7216gr95.JPG" alt="">
+                    <img src="https://fevgames.net/wp-content/uploads/2015/09/Pokemon-GO-Pokedex.png" alt="">
                     <h2>圖鑑</h2>
                     <p>關於寶可夢的種類</p>
                 </a></li>
@@ -60,14 +88,15 @@
     </div><!-- 首頁 -->
   
     <!-- 遊戲介紹 -->
-    <div data-role="page" id="page01">
-        <div data-role="header">
+    <div data-role="page" id="page01" class="bg_color" >
+        <div data-role="header" >
             <h1>Pokemon GO</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
             <h1>遊戲介紹</h1>
             <p>關於寶可夢的由來及介紹</p>
+            <img src="https://pokemongolive.com/img/posts/globaldowntime-jun2020.jpg" title="pokemon go introduce" width="100%" alt="">
             <ul>
                 <li><p>精靈寶可夢GO》（英語：Pokémon GO），是一款基於位置服務的擴增實境類手機遊戲，由任天堂公司、精靈寶可夢公司授權，Niantic, Inc.負責開發和營運。於2016年7月起在iOS和Android平台上發布。該遊戲允許玩家以現實世界為平台，捕捉、戰鬥、訓練虛擬怪獸「寶可夢」。遊戲將免費發布，亦支援內購。
                         同該遊戲同期發布的還有一部名為精靈寶可夢Go Plus的周邊設備，利用藍牙連接手機，在附近有精靈寶可夢時推送通知。</p></li>
@@ -80,7 +109,14 @@
             
         </div><!-- /content -->
         
-        <a href="#page00">回到首頁</a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page00" data-icon="bullets">首頁</a></li>
+                <li><a href="#page02" data-icon="bullets">圖鑑</a></li>
+                <li><a href="#page03" data-icon="bullets">團體戰頭目</a></li>
+                <li><a href="#page04" data-icon="bullets" data-transition="slidedown">道具</a></li>
+            </ul>
+        </div>
         
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM YAGO</h4>
@@ -88,14 +124,15 @@
     </div><!-- 遊戲介紹 -->
     
     <!-- 圖鑑 -->
-    <div data-role="page" id="page02">
+    <div data-role="page" id="page02" class="bg_color">
         <div data-role="header">
             <h1>Pokemon GO</h1>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content" >
+        <div role="main" class="ui-content" class="bg_color">
             <h1>圖鑑</h1>
             <p>關於介紹寶可夢的種類</p>
+            <img src="https://img.ruten.com.tw/s1/0/12/b5/21728687456949_174.jpg" title="pokedex picture" width="100%" alt="">
         </div><!-- /content -->
 
     <div data-role="collapsibleset" data-theme="a" data-content-theme="a">
@@ -135,22 +172,31 @@
         </div>
         <a href="https://wiki.52poke.com/wiki/%E5%AE%9D%E5%8F%AF%E6%A2%A6%E5%88%97%E8%A1%A8%EF%BC%88%E6%8C%89%E5%85%A8%E5%9B%BD%E5%9B%BE%E9%89%B4%E7%BC%96%E5%8F%B7%EF%BC%89">全國圖鑑</a>
     </div>
+    
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#page00" data-icon="bullets">首頁</a></li>
+            <li><a href="#page01" data-icon="bullets">遊戲介紹</a></li>
+            <li><a href="#page03" data-icon="bullets">團體戰頭目</a></li>
+            <li><a href="#page04" data-icon="bullets" data-transition="slidedown">道具</a></li>
+        </ul>
+    </div>
 
-        <a href="#page00">回到首頁</a>
-
-        <div data-role="footer" data-position="fixed">
+    <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM YAGO</h4>
-        </div><!-- /footer -->
+    </div><!-- /footer -->
     </div><!-- 圖鑑 -->
 
     <!-- 團體戰頭目 -->
-    <div data-role="page" id="page03">
+    <div data-role="page" id="page03" class="bg_color">
         <div data-role="header">
             <h1>Pokemon GO</h1>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content" class="bg_color">
             <h1>蛋的種類</h1>
+            <p>這些都是寶可夢頭目和頭目蛋的種類</p>
+            <img src="https://i.ytimg.com/vi/Lz-8IavvXqw/maxresdefault.jpg" title="pokemon raid" width="100%" alt="">
             <ul data-role="listview" data-inset="true"></ul>
 
                 <div role="main" class="ui-content" data-role="collapsible">
@@ -193,9 +239,14 @@
             
         </div><!-- /content -->
 
-        
-
-        <a href="#page00">回到首頁</a>
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#page00" data-icon="bullets">首頁</a></li>
+                <li><a href="#page01" data-icon="bullets">遊戲介紹</a></li>
+                <li><a href="#page02" data-icon="bullets">圖鑑</a></li>
+                <li><a href="#page04" data-icon="bullets" data-transition="slidedown">道具</a></li>
+            </ul>
+        </div>
 
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM YAGO</h4>
@@ -203,31 +254,74 @@
     </div><!-- 團體戰頭目 -->
 
     <!-- 道具 -->
-    <div data-role="page" id="page04">
+    <div data-role="page" id="page04" class="bg_color">
         <div data-role="header">
             <h1>Pokemon GO</h1>
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content" class="bg_color">
             <h1>道具</h1>
+            <p>這些都是寶可夢的道具</p>
+            <img src="https://images.zi.org.tw/dennyli/2019/12/05100756/1575511675-2b56f6891ea5cc1d55e43d5b373f97c0.jpg" title="pokemon go main items picture" width="100%" alt="">
             <ul data-role="listview" data-inset="true"></ul>
 
                 <div role="main" class="ui-content" data-role="collapsible">
                     <h1>捕捉道具</h1>
                     <p>可以幫助捕抓寶可夢的道具</p>
+                    <a href="images/berry.jpg"></a>
+                    <img src="https://fevgames.net/wp-content/uploads/2016/07/Berries.png" title="berry" width="100%" alt="">
+                    <h2>
+                        <li>蔓莓果</li>
+                        <li>蕉香果</li>
+                        <li>鳳梨果</li>
+                        <li>金色蔓莓果</li>
+                        <li>銀色鳳梨果</li>
+                    </h2>
                 </div>
 
                 <div role="main" class="ui-content" data-role="collapsible">
                     <h1>對戰道具</h1>
                     <p>可以在對戰中恢復體力的道具</p>
+                    <a href="images/items2.jpg"></a>
+                    <img src="https://qph.fs.quoracdn.net/main-qimg-4e918150ee6c5b6706a8b976d8d3471c" title="items2" width="100%" alt="">
+                    <h2>
+                        <li>傷藥</li>
+                        <li>超級傷藥</li>
+                        <li>厲害傷藥</li>
+                        <li>全滿藥</li>
+                        <li>活力碎片</li>
+                        <li>活力塊</li>
+                    </h2>
                 </div>
 
                 <div role="main" class="ui-content" data-role="collapsible">
                     <h1>進化道具</h1>
                     <p>可以讓特定寶可夢進化的道具</p>
+                    <a href="images/evolution_items.png"></a>
+                    <img src="https://cdn.kikinote.net/wp-content/uploads/2017/02/477bd9fb790edb0eb60312e314c44f5a1487754487.png" title="evolution_items" width="100%" alt="">
+                    <h2>
+                        <li>日之石</li>
+                        <li>王者之證</li>
+                        <li>金屬膜</li>
+                        <li>龍之鱗片</li>
+                        <li>升級資料</li>
+                        <li>神奧之石</li>
+                        <li>合眾之石</li>
+                    </h2>
+                
                 </div>
+                <a href="https://wiki.52poke.com/zh-hant/%E9%81%93%E5%85%B7%E5%88%97%E8%A1%A8%EF%BC%88Pok%C3%A9mon_GO%EF%BC%89">道具詳細介紹</a>
 
         </div><!-- /content -->
+
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#page00" data-icon="bullets">首頁</a></li>
+                        <li><a href="#page01" data-icon="bullets">遊戲介紹</a></li>
+                        <li><a href="#page02" data-icon="bullets">圖鑑</a></li>
+                        <li><a href="#page03" data-icon="bullets" data-transition="slidedown">團體戰頭目</a></li>
+                    </ul>
+                </div>
 
         <div data-role="footer" data-position="fixed">
             <h4>Copyright &copy; 2020 Wenzao DCAM YAGO</h4>
